@@ -13,7 +13,7 @@ export default function Todo() {
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
 
-  const apiUrl = 'https://todo-list-mern-project.netlify.app/';
+  const apiUrl = "http://localhost:8000";
 
   const handleSubmit = () => {
     setError("");
