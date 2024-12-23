@@ -13,7 +13,7 @@ export default function Todo() {
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
 
-  const apiUrl = "http://localhost:8000";
+  const apiUrl = "https://todo-list-backend-togu.onrender.com";
 
   const handleSubmit = () => {
     setError("");
@@ -46,7 +46,7 @@ export default function Todo() {
   }
 
   useEffect(() => {
-    getItems();
+    getItems()
   }, [])
 
   const getItems = () => {
