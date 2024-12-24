@@ -125,7 +125,7 @@ export default function Todo() {
     <div className='row'>
       <h3 className='mt-3'>Add Task</h3>
       {message && <p className='text-success text-center'>{message}</p>}
-      <div className='form-group d-flex gap-2 px-4'>
+      <div className='form-group d-flex gap-2 px-4 mt-2'>
         <input className='form-control' value={title} onChange={(e) => setTitle(e.target.value)} type="text" placeholder='Title' />
         <input className='form-control' value={description} onChange={(e) => setDescription(e.target.value)} type="text" placeholder='Description' />
         <button className='btn btn-dark' onClick={handleSubmit}>Submit</button>
