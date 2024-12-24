@@ -123,7 +123,7 @@ export default function Todo() {
       <h1>ToDo Project with Mern stack</h1>
     </div>
     <div className='row'>
-      <h3>Add Task</h3>
+      <h3 className='mt-3'>Add Task</h3>
       {message && <p className='text-success text-center'>{message}</p>}
       <div className='form-group d-flex gap-2 px-4'>
         <input className='form-control' value={title} onChange={(e) => setTitle(e.target.value)} type="text" placeholder='Title' />
