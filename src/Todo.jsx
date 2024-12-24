@@ -49,8 +49,8 @@ export default function Todo() {
     getItems()
   }, [])
 
-  const getItems = () => {
-    fetch(apiUrl + "/todos")
+  const getItems = async() => {
+    await fetch(apiUrl + "/todos")
       .then((res) => res.json())
       .then((res) => {
         setTodos(res)
